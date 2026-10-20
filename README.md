@@ -6,35 +6,22 @@ I am completing the professional degree in Mechanical Engineering (*Ingeniero Ci
 
 My 5.5-year programme comprises four years of Engineering Sciences (*Licenciatura en Ciencias de la Ingeniería, mención Mecánica*) followed by 1.5 years of professional specialisation, including a research thesis.
 
-## Selected projects
+## Selected engineering work
 
-### Experimental flow measurement with PIV
+| Project | My contribution | Main tools |
+| --- | --- | --- |
+| [Experimental flow measurement with PIV](projects/piv/README.md) | Multi-pass image processing, flow analysis and wave-generation equipment | Python, NumPy FFT, MATLAB, Arduino/C |
+| [Two-element rear-wing CFD study](projects/rear-wing-cfd/README.md) | Geometry, mesh, Fluent setup and analysis of open/closed DRS configurations | ANSYS Fluent, CAD |
+| [Formula SAE steering and suspension](projects/formula-sae/README.md) | Steering/suspension design, upright manufacturing preparation and coordination of four members | SolidWorks, CNC manufacturing collaboration |
+| [DiWheel chassis](projects/diwheel/README.md) | Chassis co-design, structural assessment and static prototype testing; CAD iterations and assembled prototype | Fusion 360, SolidWorks Simulation |
+| [Waste-heat recovery with HORSE Chile](projects/waste-heat-recovery/README.md) | Exhaust flow, hydraulic calculations, pump selection and economic feasibility in a basic-engineering study with HORSE Chile | Fluid mechanics, equipment selection, Excel |
+| [Porpoising model](projects/porpoising/README.md) | Simplified coupled heave/pitch model and time/frequency-domain analysis | Python, MATLAB, RK4, FFT |
 
-Experimental equipment development and multi-pass PIV processing in Python and MATLAB. The case includes a documented velocity/vorticity pair, processing settings and selected Python research sources.
+The case studies describe my contribution and the scope of each project. PIV includes experimental output, processing parameters and selected Python sources. CFD includes original figures, reported coefficients and the academic report. DiWheel includes team CAD and the assembled mechanical prototype; waste-heat recovery includes the proposed piping and process diagrams. Formula SAE and porpoising are shorter project summaries awaiting additional supporting material.
 
-[Explore the PIV case study](projects/piv/README.md)
+## Industrial background
 
-### Two-element rear-wing CFD
-
-An academic ANSYS Fluent study of open and closed DRS configurations, covering geometry, meshing, solver setup and aerodynamic analysis. The case includes original figures, coefficients, literature comparison and the course report.
-
-[Explore the CFD case study](projects/rear-wing-cfd/README.md)
-
-### DiWheel tubular chassis
-
-Chassis co-design, material selection, structural assessment and static prototype testing. The case follows CAD iterations through to the team's assembled mechanical prototype, with original figures and attribution.
-
-[Explore the DiWheel case study](projects/diwheel/README.md)
-
-### Furnace waste-heat recovery
-
-Basic-engineering feasibility work with HORSE Chile. My focus was exhaust flow, hydraulic losses, pump selection and economic evaluation; the case includes the team's piping concept and process diagram.
-
-[Explore the waste-heat recovery case study](projects/waste-heat-recovery/README.md)
-
-## Further engineering experience
-
-Suspension & Brakes Lead for U Racing Team, Formula SAE, coordinating four members; numerical modelling of coupled vehicle heave and pitch. Automotive powertrain and thermal-engineering internships at HORSE Chile and Boetek complement this project work.
+During internships at **HORSE Chile** (January–February 2026) and **Boetek** (January–February 2025), I worked on equipment diagnostics, thermal engineering, automation and mechanical design. This experience complements the academic and student-team projects presented here.
 
 ## CV and contact
 
