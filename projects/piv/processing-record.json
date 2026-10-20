@@ -1,0 +1,114 @@
+{
+  "case": "ensayo_olas_60grados_1",
+  "source": "Drive project supplied by the author; original processing and rendering summary records",
+  "acquisition": {
+    "fps": 240.0,
+    "metadata_fps": 27.70717759476038,
+    "fps_override": 240.0,
+    "frame_count": 907,
+    "width": 1920,
+    "height": 1080,
+    "dt_s": 0.016666666666666666,
+    "start_frame": 0,
+    "roi": [
+      450,
+      0,
+      1060,
+      1080
+    ],
+    "mask_rects": [],
+    "mask_polygons": [
+      [
+        [
+          939,
+          678
+        ],
+        [
+          1044,
+          498
+        ],
+        [
+          1057,
+          505
+        ],
+        [
+          952,
+          686
+        ]
+      ]
+    ]
+  },
+  "processing": {
+    "passes": [
+      {
+        "window": 64,
+        "overlap": 0.5,
+        "search": 20
+      },
+      {
+        "window": 48,
+        "overlap": 0.75,
+        "search": 16
+      }
+    ],
+    "pairs_processed": 903,
+    "stride": 1,
+    "temporal_filter": {
+      "enabled": true,
+      "method": "median",
+      "radius": 10,
+      "min_count": 3
+    },
+    "min_corr": 0.18,
+    "local_threshold_px": 8.0,
+    "spatial_filter_enabled": false,
+    "correlation_method": "fft",
+    "calibration": {
+      "mode": "explicit_scale",
+      "plate_length_mm": null,
+      "plate_px": null,
+      "mm_per_px": 0.19372336303758234
+    }
+  },
+  "rendering": {
+    "parameters": {
+      "window_rows_x_cols": "7x7",
+      "window_length_each_axis": 7,
+      "polynomial_order": 3,
+      "filter_mode": "separable, axis y then axis x, mode=interp",
+      "base_min_correlation": 0.18,
+      "temporal_filter_radius": 10,
+      "temporal_filter_measurements": 21,
+      "vorticity_gaussian_sigma_grid_nodes": 3.0,
+      "vorticity_threshold": null
+    },
+    "passes": [
+      {
+        "window": 64,
+        "overlap": 0.5,
+        "search": 20
+      },
+      {
+        "window": 48,
+        "overlap": 0.75,
+        "search": 16
+      }
+    ],
+    "final_grid_step_px": 12,
+    "output_fps": 30.0,
+    "output_duration_s": 30.1,
+    "vorticity_color_limit_mode": "fixed_symmetric",
+    "vorticity_color_limit_abs_1_s": 2.0,
+    "speed_color_limit_global_max_mm_s": 97.30577850341797
+  },
+  "selected_snapshot": {
+    "image_pair": [
+      300,
+      304
+    ],
+    "labelled_physical_time_s": 1.25,
+    "source_video_playback_position_s": 10,
+    "arrows": "fixed display length; colour encodes speed"
+  },
+  "scope": "Existing research outputs; no new numerical processing or independent accuracy assessment was performed for this portfolio."
+}
