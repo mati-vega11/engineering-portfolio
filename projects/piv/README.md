@@ -28,17 +28,17 @@ Build an experimental platform and image-processing workflow to investigate the 
 4. Calculate vorticity and integrate its positive and negative components separately to evaluate circulation.
 5. Analyse field maps and time histories across experimental cases.
 
-Recordings are acquired at 240 fps. In the documented 60° example below, images within a pair are separated by four camera frames, giving Δt = 4/240 s, approximately 16.7 ms. Consecutive PIV pairs advance by one camera frame.
+Recordings are acquired at 240 fps. In the documented example below, images within a pair are separated by four camera frames, giving Δt = 4/240 s, approximately 16.7 ms. Consecutive PIV pairs advance by one camera frame.
 
 ## Representative experimental output — 90° plate case
 
-These figures feature a 90° plate test at a time when the vorticity structures are clearly visible. The velocity snapshot is labelled t = 2.562 s; the vorticity montage includes the corresponding t ≈ 2.56 s sample. Each image retains its original annotations and colour scale.
+This 90° plate run is shown at instants with clearly resolved vortical structures. The velocity snapshot is frame pair 369→373 at t = 1.538 s, selected by checking the paired vorticity sequence. The montage below also includes the later t ≈ 2.56 s sample. Each image retains its original annotations and colour scale.
 
-### Velocity field at t = 2.562 s
+### Velocity field at t = 1.538 s
 
-![PIV velocity field around a 90-degree plate at t = 2.562 s](assets/velocity-90deg-t2.562s.png)
+![PIV velocity field around a 90-degree plate at t = 1.538 s](assets/velocity-90deg-t1.538s.png)
 
-*Figure 2. Velocity field from frame pair 615→619. The overlay reports a 7×7 Savitzky–Golay filter, polynomial order 3, a 21-measurement temporal median and 92.9% valid vectors. Colour represents speed from 0 to 195 mm/s. Arrow lengths are fixed for display, so arrows show direction and do not independently encode speed. This frame was selected from the [90° velocity-field sequence on Drive](https://drive.google.com/file/d/1ToeXWVffcljyM51Gw_vy7CaFTNcOydHT/view).*
+*Figure 2. Velocity field from frame pair 369→373 at t = 1.538 s. The processing overlay reports a 7×7 Savitzky–Golay filter, polynomial order 3, a 21-measurement temporal median and 96.6% valid vectors. Colour represents speed from 0 to 195 mm/s. Arrow lengths are fixed for display, so arrows show direction and do not independently encode speed. This frame was selected from the [90° processed velocity-field sequence on Drive](https://drive.google.com/file/d/1ToeXWVffcljyM51Gw_vy7CaFTNcOydHT/view); the crop removes the player margins and retains the field and colour scale.* 
 
 ### Vorticity sequence and intense structures
 
@@ -80,3 +80,4 @@ The processing rejects vectors using masks, image-content checks and correlation
 ## Tools
 
 Python (NumPy, SciPy FFT, OpenCV, Matplotlib), MATLAB, Arduino/C; spatial calibration, multi-pass PIV, image filtering, vector validation, encoder and current measurement.
+
