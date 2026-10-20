@@ -1,0 +1,30 @@
+# Python and Jupyter transient files
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.matplotlib-cache/
+.mplconfig/
+.venv/
+venv/
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+
+# Build products
+*.aux
+*.log
+*.out
+*.synctex.gz
+build/
+dist/
+
+# Raw and temporary working material is kept outside the portfolio
+raw_data/
+private/
+tmp/
+
+# OS files
+.DS_Store
+Thumbs.db
