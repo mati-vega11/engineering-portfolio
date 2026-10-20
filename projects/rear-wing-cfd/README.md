@@ -35,6 +35,12 @@ Compare the aerodynamic behaviour of a Formula 1-style two-element rear wing in 
 | Near-wall mesh | Inflation layers; specified y+ target of approximately 1 |
 | Geometry | Two-element wing using NACA 2412 profiles |
 
+### Why the k–kl–ω transition model?
+
+The report selected Fluent's three-equation **k–kl–ω transition model**, an eddy-viscosity RANS model intended to represent laminar-to-turbulent boundary-layer transition. It transports turbulent kinetic energy (`k`), laminar kinetic energy (`kl`) and the inverse turbulent time scale (`ω`). The `kl` equation represents fluctuations associated with the pre-transition boundary layer; coupling between `kl` and `k` lets the model represent the development of turbulence as transition occurs. This was relevant to the project because transition and separation can affect the loading and drag of the two-element wing. See the [ANSYS Fluent Theory Guide](https://ansyshelp.ansys.com/public/Views/Secured/corp/v261/en/flu_th/flu_th_sec_turb_kkl_trans_eq.html) for the model equations.
+
+The course report documents a steady pressure-based Fluent setup, the near-wall treatment as “Correlation”, inflation layers with a target y+ of approximately 1, SIMPLEC coupling, PRESTO! pressure interpolation and second-order-upwind discretisation. This remains a course-scale RANS study: it models mean-flow behaviour with a transition model; it is not a resolved simulation of individual turbulent eddies or an experimental validation of the full car.
+
 The report uses a reduced computational domain to accommodate the available mesh-element limit. The geometry and domain differ from the two-dimensional reference study, so the literature comparison is interpreted within that scope.
 
 ### Mesh and quality assessment
@@ -85,4 +91,3 @@ A. R. S. Azmi et al. (2017), *Study on airflow characteristics of rear wing of F
 ## Tools
 
 ANSYS Fluent; geometry development, inflation-layer meshing, mesh-quality assessment, model setup and post-processing.
-
