@@ -28,23 +28,25 @@ Build an experimental platform and image-processing workflow to investigate the 
 4. Calculate vorticity and integrate its positive and negative components separately to evaluate circulation.
 5. Analyse field maps and time histories across experimental cases.
 
-Recordings are acquired at 240 fps. In the documented example below, images within a pair are separated by four camera frames, giving Δt = 4/240 s, approximately 16.7 ms. Consecutive PIV pairs advance by one camera frame.
+Recordings are acquired at 240 fps. In the documented 60° example below, images within a pair are separated by four camera frames, giving Δt = 4/240 s, approximately 16.7 ms. Consecutive PIV pairs advance by one camera frame.
 
-## Representative experimental output
+## Representative experimental output — 90° plate case
 
-### Velocity field
+These figures feature a 90° plate test at a time when the vorticity structures are clearly visible. The velocity snapshot is labelled t = 2.562 s; the vorticity montage includes the corresponding t ≈ 2.56 s sample. Each image retains its original annotations and colour scale.
 
-![PIV velocity field around the inclined plate at t = 1.250 s](assets/velocity-example.png)
+### Velocity field at t = 2.562 s
 
-*Figure 2. Recorded output for the 60° plate case `ensayo_olas_60grados_1`, image pair 300→304, labelled physical time t = 1.250 s. Colour represents speed in mm/s. Arrow lengths are fixed for display, as stated in the original overlay; they show direction and do not independently encode speed. The original colourbar and mask are preserved.*
+![PIV velocity field around a 90-degree plate at t = 2.562 s](assets/velocity-90deg-t2.562s.png)
 
-### Vorticity field
+*Figure 2. Velocity field from frame pair 615→619. The overlay reports a 7×7 Savitzky–Golay filter, polynomial order 3, a 21-measurement temporal median and 92.9% valid vectors. Colour represents speed from 0 to 195 mm/s. Arrow lengths are fixed for display, so arrows show direction and do not independently encode speed. This frame was selected from the [90° velocity-field sequence on Drive](https://drive.google.com/file/d/1ToeXWVffcljyM51Gw_vy7CaFTNcOydHT/view).*
 
-![PIV vorticity field for the same image pair at t = 1.250 s](assets/vorticity-example.png)
+### Vorticity sequence and intense structures
 
-*Figure 3. Vorticity for the same labelled image pair and physical time. The colour scale is fixed at ±2 s⁻¹: values outside these limits saturate visually. The documented rendering applies no vorticity threshold. This snapshot was extracted from the existing result video without recomputing the field.*
+![Nine time samples of the vorticity field for the 90-degree plate experiment](assets/vorticity-sequence-90deg.webp)
 
-### Parameters documented for this run
+*Figure 3. Nine samples at t = 0.00, 0.51, 1.02, 1.54, 2.05, 2.56, 3.07, 3.58 and 4.09 s. The montage uses a shared colour scale from −5.64 to +5.53 s⁻¹; the t ≈ 2.56 s panel shows strong, opposite-signed structures. The plotted axes, labels and scale are preserved from the Drive preview.*
+
+### Additional processing parameters documented for a 60° run
 
 | Parameter | Recorded value |
 | --- | --- |
@@ -59,7 +61,7 @@ Recordings are acquired at 240 fps. In the documented example below, images with
 | Spatial post-processing | Separable Savitzky–Golay, 7×7 vector nodes, polynomial order 3 |
 | Vorticity post-processing | Gaussian smoothing, σ = 3 vector-grid nodes |
 
-The settings are specific to this run. They should be recalibrated for other recordings rather than assumed to apply to every test. See the [processing record](processing-record.json).
+The table above describes the earlier 60° case, not the 90° figures shown first. Settings should be recalibrated for other recordings rather than assumed to apply to every test. See the [processing record](processing-record.json). The earlier [60° velocity](assets/velocity-example.png) and [vorticity](assets/vorticity-example.png) snapshots are retained as supporting examples.
 
 ## Code and processing documentation
 
@@ -78,4 +80,3 @@ The processing rejects vectors using masks, image-content checks and correlation
 ## Tools
 
 Python (NumPy, SciPy FFT, OpenCV, Matplotlib), MATLAB, Arduino/C; spatial calibration, multi-pass PIV, image filtering, vector validation, encoder and current measurement.
-
