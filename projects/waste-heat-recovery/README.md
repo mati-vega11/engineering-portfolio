@@ -1,4 +1,4 @@
-# Furnace waste-heat recovery
+# Waste-Heat Recovery Feasibility Study with HORSE Chile
 
 **Basic engineering and feasibility study | Project with HORSE Chile | Universidad de Chile | Autumn 2025**
 
@@ -17,7 +17,7 @@ Within the student team, I focused on:
 - Evaluating pump options for the oil circuit and examining suction-side constraints.
 - Building the economic assessment and comparing operating scenarios.
 
-The team worked jointly on the overall study. The deliverable was basic engineering and feasibility analysis; HORSE's engineering team handled subsequent detailed engineering.
+The team worked jointly on the overall study. The deliverable was basic engineering and feasibility analysis; HORSE Chile's engineering team handled subsequent detailed engineering.
 
 ## Proposed integration
 
@@ -50,7 +50,3 @@ These are modelled scenarios from a 2025 academic study. Plant savings and payba
 ## Outcome and engineering relevance
 
 The team delivered a calculation report, proposed piping and process diagrams, equipment comparisons and a scenario-based economic model. My contribution connected fluid mechanics, equipment selection and economic feasibility in an automotive manufacturing setting.
-
-## Source and credit
-
-Source: *Proyecto vinculado: recuperación de energía de hornos para calentamiento de aceite de templado*, final report dated 22 July 2025, with the accompanying economic workbook. The figures are group deliverables; authorship shown in the original drawing is preserved. See the [figure source record](assets/README.md).
