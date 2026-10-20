@@ -1,0 +1,66 @@
+{
+  "video": "input_video.mp4",
+  "fps_override": 240.0,
+  "start_frame": 0,
+  "frame_delta": 4,
+  "pairs": 30,
+  "stride": 1,
+  "roi": [
+    450,
+    0,
+    1060,
+    1080
+  ],
+  "mask_rects": [],
+  "mask_polygons": [
+    [
+      [
+        939,
+        678
+      ],
+      [
+        1044,
+        498
+      ],
+      [
+        1057,
+        505
+      ],
+      [
+        952,
+        686
+      ]
+    ]
+  ],
+  "mm_per_px": 0.19372336303758234,
+  "correlation_method": "fft",
+  "passes": [
+    {
+      "window": 64,
+      "overlap": 0.5,
+      "search": 20
+    },
+    {
+      "window": 48,
+      "overlap": 0.75,
+      "search": 16
+    }
+  ],
+  "min_corr": 0.18,
+  "local_threshold_px": 8.0,
+  "spatial_filter_enabled": false,
+  "temporal_filter": {
+    "enabled": true,
+    "method": "median",
+    "radius": 10,
+    "min_count": 3
+  },
+  "parallel": {
+    "enabled": false
+  },
+  "overlay_every": 0,
+  "write_px_csv": false,
+  "vector_video": {
+    "enabled": false
+  }
+}
