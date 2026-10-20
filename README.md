@@ -15,9 +15,9 @@ My 5.5-year programme comprises four years of Engineering Sciences (*Licenciatur
 | [Formula SAE steering and suspension](projects/formula-sae/README.md) | Steering/suspension design, upright manufacturing preparation and coordination of four members | SolidWorks, CNC manufacturing collaboration |
 | [DiWheel chassis](projects/diwheel/README.md) | Chassis co-design, structural assessment and static prototype testing; CAD iterations and assembled prototype | Fusion 360, SolidWorks Simulation |
 | [Waste-heat recovery with HORSE Chile](projects/waste-heat-recovery/README.md) | Exhaust flow, hydraulic calculations, pump selection and economic feasibility in a basic-engineering study with HORSE Chile | Fluid mechanics, equipment selection, Excel |
-| [Porpoising model](projects/porpoising/README.md) | Simplified coupled heave/pitch model and time/frequency-domain analysis | Python, MATLAB, RK4, FFT |
+| [Simplified Formula 1 porpoising model](projects/porpoising/README.md) | Academic heave/pitch simulation with ride-height-dependent aerodynamic loading, plus the course presentation | Python, MATLAB, RK4, FFT |
 
-The case studies describe my contribution and the scope of each project. PIV includes experimental output, processing parameters and selected Python sources. CFD includes original figures, reported coefficients and the academic report. DiWheel includes team CAD and the assembled mechanical prototype; waste-heat recovery includes the proposed piping and process diagrams. Formula SAE and porpoising are shorter project summaries awaiting additional supporting material.
+The case studies describe my contribution and the scope of each project. PIV includes experimental output, processing parameters and selected Python sources. CFD includes original figures, reported coefficients and the academic report. DiWheel includes team CAD and the assembled mechanical prototype; waste-heat recovery includes the proposed piping and process diagrams. The porpoising project includes the course presentation and the evolving simulation notebook.
 
 ## Industrial background
 
