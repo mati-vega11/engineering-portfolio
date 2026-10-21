@@ -32,19 +32,17 @@ Recordings are acquired at 240 fps. In the documented example below, images with
 
 ## Representative experimental output — 90° plate case
 
-This 90° plate run is shown at instants with clearly resolved vortical structures. The velocity snapshot is frame pair 369→373 at t = 1.538 s, selected by checking the paired vorticity sequence. The montage below also includes the later t ≈ 2.56 s sample. Each image retains its original annotations and colour scale.
+The matched snapshot below is taken at frame pair 300→304 (t = 1.250 s), where the vorticity field shows a clear opposite-signed pair beside the plate. Both panels come from the same run and time.
 
-### Velocity field at t = 1.538 s
+![Matched velocity and spanwise-vorticity fields around a 90-degree plate at frame pair 300 to 304, t = 1.250 seconds](assets/velocity-vorticity-90deg-t1.250s.png)
 
-![PIV velocity field around a 90-degree plate at t = 1.538 s](assets/velocity-90deg-t1.538s.png)
+*Figure 2. The upper panel shows velocity magnitude (0–195 mm/s) and fixed-length direction arrows. Its source overlay reports a 7×7 Savitzky–Golay filter, order 3, temporal median 21 and 93.7% valid vectors. The lower panel shows spanwise vorticity, ωz = ∂v/∂x − ∂u/∂y, Gaussian smoothing σ = 3 vector nodes, masking of |ωz| < 1 s⁻¹, and the original fixed ±9 s⁻¹ display range (saturated). Both frames are decoded from the original 90° Drive videos at the matching 10.0 s playback position. The composition removes the video’s top text band and outer border, retains the original field colours and colour bars, and adds a 1.36× inset around the plate. The fields were not recalculated or recoloured.*
 
-*Figure 2. Velocity field from frame pair 369→373 at t = 1.538 s. The processing overlay reports a 7×7 Savitzky–Golay filter, polynomial order 3, a 21-measurement temporal median and 96.6% valid vectors. Colour represents speed from 0 to 195 mm/s. Arrow lengths are fixed for display, so arrows show direction and do not independently encode speed. This frame was selected from the [90° processed velocity-field sequence on Drive](https://drive.google.com/file/d/1ToeXWVffcljyM51Gw_vy7CaFTNcOydHT/view); the crop removes the player margins and retains the field and colour scale.* 
-
-### Vorticity sequence and intense structures
+### Vorticity sequence and time evolution
 
 ![Nine time samples of the vorticity field for the 90-degree plate experiment](assets/vorticity-sequence-90deg.webp)
 
-*Figure 3. Nine samples at t = 0.00, 0.51, 1.02, 1.54, 2.05, 2.56, 3.07, 3.58 and 4.09 s. The montage uses a shared colour scale from −5.64 to +5.53 s⁻¹; the t ≈ 2.56 s panel shows strong, opposite-signed structures. The plotted axes, labels and scale are preserved from the Drive preview.*
+*Figure 3. Nine samples at t = 0.00, 0.51, 1.02, 1.54, 2.05, 2.56, 3.07, 3.58 and 4.09 s. The montage uses a shared colour scale from −5.64 to +5.53 s⁻¹; the t ≈ 2.56 s panel also shows strong, opposite-signed structures. The plotted axes, labels and scale are preserved from the Drive preview.*
 
 ### Additional processing parameters documented for a 60° run
 
